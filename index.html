@@ -876,6 +876,18 @@
           {name:"Workman’s Vest", type:"Light", ac:13, perk:"+1 STR on tool checks."}
         ],
         utils:["Emergency Repair — Heal mech ally 1d8+INT.", "Hazard Foam — Create difficult terrain."]
+      },
+      { 
+    key:"Detective", role:"Versatile Investigator", startHP:12,
+    weapons:[
+        {name:"Service Pistol", dmg:"1d8+3", type:"Ranged", special:{name:"Mark Weakpoint", text:"After hitting, the next ally attack vs that target gains advantage (1/short rest)."}},
+        {name:"Shock Baton", dmg:"1d6+3", type:"Melee", special:{name:"Stun Strike", text:"On hit, target rolls CON save (DC 12) or is stunned until end of next turn (1/short rest)."}}
+        ],
+    armor:[
+        {name:"Trenchcoat Vest", type:"Light", ac:12, perk:"Once/short rest, blend into dim light or crowds, gaining advantage on Stealth checks for 1 minute."},
+        {name:"Investigator’s Overcoat", type:"Medium", ac:13, perk:"Once/short rest, gain advantage on an Insight or Investigation check."}
+        ],
+    utils:["Deductive Strike (Offensive) — After observing a foe for 1 round, your next attack automatically hits and deals +1d8 bonus damage (1/short rest).", "Calculated Evasion (Defensive) — As a reaction, halve the damage of an incoming attack (1/short rest)."]
       }
     ];
 
@@ -1135,7 +1147,7 @@
           borderClass = 'border-juggernaut';
         } else if (['starseer', 'omniform', 'monsterhunter', 'beasttamer'].includes(classKey)) {
           borderClass = 'border-starseer';
-        } else if (['bountyhunter', 'smuggler', 'specter', 'gadgeteer'].includes(classKey)) {
+        } else if (['bountyhunter', 'smuggler', 'specter', 'gadgeteer', 'detective'].includes(classKey)) {
           borderClass = 'border-bountyhunter';
         } else if (['warpmage', 'psion', 'technomancer', 'medic', 'luminar', 'harmonist', 'scientist', 'politician'].includes(classKey)) {
           borderClass = 'border-warpmage';
