@@ -514,30 +514,7 @@ const CLASSES = [
     ],
     utils: ["Speechcraft — Inspire (+1d4).", "Blackmail — Extract information."],
   },
-  {
-    key: "Survivor Engineer",
-    role: "Industrial Combatant",
-    startHP: 12,
-    weapons: [
-      {
-        name: "Plasma Cutter",
-        dmg: "1d8+3",
-        type: "Melee",
-        special: { name: "Armor Melt", text: "-2 AC on target for 1 round." },
-      },
-      {
-        name: "Hydraulic Hammer",
-        dmg: "1d10+3",
-        type: "Melee",
-        special: { name: "Concussive Slam", text: "Stun target." },
-      },
-    ],
-    armor: [
-      { name: "Hazard Plate", type: "Medium", ac: 14, perk: "Resist fire once/rest." },
-      { name: "Workman’s Vest", type: "Light", ac: 13, perk: "+1 STR on tool checks." },
-    ],
-    utils: ["Emergency Repair — Heal mech ally 1d8+INT.", "Hazard Foam — Create difficult terrain."],
-  },
+
   {
     key: "Detective",
     role: "Versatile Investigator",
@@ -581,9 +558,10 @@ const CLASSES = [
       "Calculated Evasion (Defensive) — As a reaction, halve the damage of an incoming attack (1/short rest).",
     ],
   },
+
   {
     key: "Engineer",
-    role: "Support / Tank",
+    role: "Support / Utility",
     startHP: 12,
     weapons: [
       {
