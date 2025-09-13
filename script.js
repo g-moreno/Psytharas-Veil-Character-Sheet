@@ -980,7 +980,7 @@ const SPECIES = [
 
         let borderClass = 'border-caster'; // Default to a caster/support border
 
-        if (['juggernaut', 'soldier', 'sentinel', 'survivorengineer'].includes(classKey)) {
+        if (['juggernaut', 'soldier', 'sentinel', 'engineer'].includes(classKey)) {
           borderClass = 'border-juggernaut';
         } else if (['starseer', 'omniform', 'monsterhunter', 'beasttamer'].includes(classKey)) {
           borderClass = 'border-starseer';
